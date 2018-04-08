@@ -85,7 +85,6 @@ public class UEditorController {
                         Map<String,String>map = FTPUtils.upload(pic,ueditor,ip,user,password,downUrl);
                         String uploadurl = map.get(FTPUtils.UPLOAD_FILE_URL);
 
-                        //String uploadInfo = Upload.upload(client, pic, request, response, uploadHost, ueditor);
 
                         if(!"".equals(uploadurl)){    //如果上传成功
                             jo.put("state", "SUCCESS");
@@ -96,6 +95,7 @@ public class UEditorController {
                             jo.put("url", uploadurl);//这里的url字段表示的是上传后的图片在图片服务器的完整地址（http://ip:端口/***/***/***.jpg）
                         }else{    //如果上传失败
                         }
+                        //发送到前端解析
                         ResponseUtils.renderJson(response, jo.toString());
                     }
                 }catch (Exception e) {
