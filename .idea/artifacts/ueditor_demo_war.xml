@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="ueditor-demo:war">
+    <output-path>$PROJECT_DIR$/target</output-path>
+    <root id="archive" name="ueditor-demo.war">
+      <element id="artifact" artifact-name="ueditor-demo:war exploded" />
+    </root>
+  </artifact>
+</component>
