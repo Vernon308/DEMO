@@ -35,8 +35,6 @@ public class UEditorController {
     @Value(value="${ueditor}")    //后台图片保存地址
     private String ueditor;
 
-    @Value(value="${uploadHost}")
-    private String uploadHost;    //项目host路径
 
     @Value(value="${ftp_ip}")
     private String ip;
